@@ -1,15 +1,17 @@
 window.cipher = {
-  encode: (entrada1,offsetNumber1) => {
-    let codificar = "";
+  encode: (entrada1,desplazamiento) => {
+    let codificar = " ";
     for(let i=0; i<entrada1.length; i++){ 
       let ascii1 = entrada1.charCodeAt(i);
-      //if(ascii1>=32 && ascii1<=126){
-        codificar += String.fromCharCode((ascii1-32+offsetNumber1)%95+32);
-       // }
-      //  if(ascii1>=161 && ascii<=256){
-         codificar += String.fromCharCode((ascii1-161+offsetNumber1)%95+161);
-      //  }
+      if(ascii1>=32 && ascii1<=126){
+        const fijo=((ascii1-32)+(parseInt(desplazamiento)))%95+32;
+        codificar += String.fromCharCode(fijo);
+      //  // }
+      // //  if(ascii1>=161 && ascii<=256){
+      //    codificar += String.fromCharCode((ascii1-161+offsetNumber1)%95+161);
+      // //  }
        }
+      }
        return codificar;
     },
   decode: (entrada2,offsetNumber2) => {
@@ -22,5 +24,6 @@ window.cipher = {
         
         }
         return decodificar;
-  }
+      }
+  
 };
