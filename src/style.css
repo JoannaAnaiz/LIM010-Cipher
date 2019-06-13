@@ -1,1 +1,12 @@
-/* Acá van tus reglas de estilo */
+body{
+    
+}
+
+.show{
+    display: block !important
+}
+
+.hide{
+    display: none !important
+}
+
