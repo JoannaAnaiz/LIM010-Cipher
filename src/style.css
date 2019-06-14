@@ -1,6 +1,19 @@
-body{
-    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}   
+
+h1{
+    color: #122934;
 }
+
+body {
+    background-color: rgb(151, 215, 240);
+    font-family: 'Lato', sans-serif;
+    color: #1F485B;
+    
+  }
 
 .show{
     display: block !important
@@ -10,3 +23,5 @@ body{
     display: none !important
 }
 
+
+  

@@ -6,24 +6,25 @@ window.cipher = {
       if(ascii1>=32 && ascii1<=126){
         const fijo=((ascii1-32)+(parseInt(desplazamiento)))%95+32;
         codificar += String.fromCharCode(fijo);
-      //  // }
-      // //  if(ascii1>=161 && ascii<=256){
-      //    codificar += String.fromCharCode((ascii1-161+offsetNumber1)%95+161);
-      // //  }
+       // }
+      //  if(ascii1>=161 && ascii<=256){
+            // const fijo = ((ascii-161)+(parseInt(desplazamiento)))%95+161;
+        //  codificar += String.fromCharCode(fijo);
+      //  }
        }
-      }
+      } 
        return codificar;
     },
-  decode: (entrada2,offsetNumber2) => {
-    let decodificar = "";
-    for (let i=0; i<entrada2.length; i++){ 
-      let ascii2 = entrada2.charCodeAt(i);
-      //if(ascii2>=32 && ascii2<=126){
-        decodificar += String.fromCharCode((ascii2-offsetNumber2+32)%95+32);
-        //}
+  // decode: (entrada1,desplazamiento) => {
+  //   let decodificar = "";
+  //   for (let i=0; i<entrada1.length; i++){ 
+  //     let ascii2 = entrada1.charCodeAt(i);
+  //     if(ascii2>=32 && ascii2<=126){
+  //       const fijo = ((ascii2-32)+(parseInt(desplazamiento))%95+161)
+  //       decodificar += String.fromCharCode(fijo);
+  //       //}
         
-        }
-        return decodificar;
-      }
-  
-};
+  //       }
+  //       return decodificar;
+  //     }
+}

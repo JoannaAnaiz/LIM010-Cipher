@@ -20,14 +20,18 @@
   </section>
   <form>
   <section id='pagina2' class=" hide">
+    <p>Encripta tus mensajes y las formulas de manera sencilla y segura.</p>
+    <p>Debes ingresar el texto a cifrar y la clave de cifrado, haces click en el botón Cifrar y obtienes tu texto cifrado. De manera similar para descifrar.</p>
     <p>Ingrese el texto a Cifrar:</p>
-    <p><button type="submit" id = 'cifrar'>Cifrar</button></p>
-    <p><button type="submit" id = 'descifrar'>Descifrar</button></p>
+  <div class = "flex-container">
+    <p><button type="button" id = 'cifrar'>Cifrar</button></p>
+    <p><button type="button" id = 'descifrar'>Descifrar</button></p>
+  </div>
     <p id="showMessage">Nro de desplazamiento</p>
     <p><input id="desplazamiento" type="number" value = "1"></p>
     <textarea name="text1" class="caja" id="entrada1" placeholder="Escriba texto a Cifrar"></textarea>    
     <textarea name="text2" class="caja" id="resultado" placeholder="Escriba texto a Descifrar"></textarea>
-    <p><button type="reset">Resetear</button></p>
+    <!-- <p><button type="reset" id = 'resetear'>Resetear</button></p> -->
     <p><button type="volver">Volver a la pagina de Inicio</button></p>
   </section>
   <section id="pagina3" class="hide">
@@ -36,7 +40,7 @@
   <footer class="credito">
     <p class="autora">© Hecho por Joanna Yucra 2019. </p>
   </footer>
-    </main>
+</main>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
