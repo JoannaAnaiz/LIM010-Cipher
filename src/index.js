@@ -6,6 +6,8 @@ const resultado = document.getElementById('resultado');
 const cifrar = document.getElementById('cifrar');
 const decifrar = document.getElementById('decifrar');
 const password1 = document.getElementById('password1');
+const resetear = document.getElementById('resetear');
+const entrada1 = document.getElementById('entrada1');
 
 
 const password2 = 'LABORATORIA';
@@ -14,7 +16,7 @@ let nroIntentos = 0;
 const confirmar = () => {
   if (password1.value === password2) {
     pagina1.classList.add('hide');
-    pagina2.classList.replace('show');
+    pagina2.classList.replace('hide', 'show');
     console.log('Lo Lograste')
   }
   else {
@@ -45,12 +47,4 @@ decifrar.addEventListener('click', () => {
     const respuesta = window.cipher.decode(mensajeadecifrar,desplazamiento);
         resultado.innerHTML = respuesta;
 })
-
-
-
-
-
-
-
-
 
