@@ -9,9 +9,6 @@ window.cipher = {
       }else if(codAscii >= 160 && codAscii <= 255){
         let code = (codAscii-160 + desplazamiento)%96 + 160;
         codificar += String.fromCharCode(code);
-      // }else if(codAscii >= 32 && codAscii <= 57){
-      //   let code = ((codAscii-32 + desplazamiento)%26 + 32);
-      //   codificar += String.fromCharCode(code);
       }
       
     }
@@ -30,6 +27,9 @@ window.cipher = {
         decodificar += String.fromCharCode(code);
       }else if(codAscii >= 48 && codAscii <= 57){
         let code = (codAscii + 52 - desplazamiento)%10 + 48;
+        decodificar += String.fromCharCode(code);
+      }else if(codAscii >= 32 && codAscii <=47){
+        let code = (codAscii + 32 - desplazamiento)%16 + 32;
         decodificar += String.fromCharCode(code);
       }
     }
