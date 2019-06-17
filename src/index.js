@@ -6,8 +6,6 @@ const resultado = document.getElementById('resultado');
 const cifrar = document.getElementById('cifrar');
 const decifrar = document.getElementById('decifrar');
 const password1 = document.getElementById('password1');
-const resetear = document.getElementById('resetear');
-const entrada1 = document.getElementById('entrada1');
 
 
 const password2 = 'LABORATORIA';
@@ -48,13 +46,6 @@ decifrar.addEventListener('click', () => {
         resultado.innerHTML = respuesta;
 })
 
-resetear.addEventListener('click', () =>{
-  resultado.value ="";
-  entrada1.value ="";
-  resultado.value ="";
-  cifrar.value ="";
-  decifrar.value ="";
-})
 
 
 
