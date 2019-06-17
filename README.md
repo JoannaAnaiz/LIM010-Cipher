@@ -1,4 +1,4 @@
-LABQ
+#h1 LABQ
 LABQ es una web que es de gran ayuda para aquellas personas que estan en constante realizacion de formulas quimicas
 y muchas de ellas pueden ser sustraidas sin ningun temor, por ello se realizo esta web en la cual uno puede intercambiar informacion sin ningun temor, ya que el mensaje que se envia a traves de esta plataforma estara codificada.
 
