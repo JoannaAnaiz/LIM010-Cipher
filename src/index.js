@@ -2,13 +2,12 @@ const ingresar = document.getElementById('ingresar');
 const pagina1 = document.getElementById('pagina1');
 const pagina2 = document.getElementById('pagina2');
 const pagina3 = document.getElementById('pagina3');
-// const entrada1 = document.getElementById('entrada1');
 const resultado = document.getElementById('resultado');
 const cifrar = document.getElementById('cifrar');
 const decifrar = document.getElementById('decifrar');
 const password1 = document.getElementById('password1');
-// const desplazamiento = document.getElementById('desplazamiento');
-// const resetear = document.getElementById('resetear');
+const resetear = document.getElementById('resetear');
+const entrada1 = document.getElementById('entrada1');
 
 
 const password2 = 'LABORATORIA';
@@ -47,8 +46,15 @@ decifrar.addEventListener('click', () => {
     const desplazamiento = parseInt(document.getElementById('desplazamiento').value);
     const respuesta = window.cipher.decode(mensajeadecifrar,desplazamiento);
         resultado.innerHTML = respuesta;
+})
 
-}  )
+resetear.addEventListener('click', () =>{
+  resultado.value ="";
+  entrada1.value ="";
+  resultado.value ="";
+  cifrar.value ="";
+  decifrar.value ="";
+})
 
 
 

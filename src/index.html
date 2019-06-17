@@ -16,24 +16,25 @@
     <form>
       <label>Contraseña</label>
       <input type="password" id="password1" placeholder="Password" name="Contrasena" required />
+      <p><button type="submit" id="ingresar">Entrar</button></p>
     </form>
-    <p><button type="submit" id='ingresar'>Entrar</button></p>
+    
   </section>
   <form>
-    <section id='pagina2' class=" hide">
+    <section id="pagina2" class=" hide">
       <p>Encripta tus mensajes y las formulas de manera sencilla y segura.</p>
       <p>Debes ingresar el texto a cifrar y la clave de cifrado, haces click en el botón Cifrar y obtienes tu texto
         cifrado. De manera similar para descifrar.</p>
       <p>Ingrese el texto a Cifrar:</p>
       <div class="flex-container">
-        <p><button type="button" id='cifrar'>Cifrar</button></p>
-        <p><button type="button" id='decifrar'>Decifrar</button></p>
+        <p><button type="button" id="cifrar">Cifrar</button></p>
+        <p><button type="button" id="decifrar">Decifrar</button></p>
+        <p><button type="reset" class ="resetear">Resetear</button></p>
       </div>
       <p id="showMessage">Nro de desplazamiento</p>
       <p><input id="desplazamiento" type="number" value="1"></p>
-      <p><textarea name="text1" class='estilocaja' id="entrada1" placeholder="Escriba texto a Cifrar"></textarea></p>
+      <p><textarea name="text1" class="estilocaja" id="entrada1" placeholder="Escriba texto a Cifrar"></textarea></p>
       <p><textarea name="text2" class="estilocaja" id="resultado" placeholder="Escriba texto a Decifrar"></textarea></p>
-      <!-- <p><button type="reset" id = 'resetear'>Resetear</button></p> -->
       <p><button type="volver">Volver a la pagina de Inicio</button></p>
     </section>
     <section id="pagina3" class="hide">
