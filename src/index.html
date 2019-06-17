@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <main id= 'root'>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <main id='root'>
       <h1>Bienvenido a LABQ</h1>
-    </header>
-   <section class = "pantalla" id="pagina1">
+  </header>
+  <section class="pantalla" id="pagina1">
     <p>Ingrese Contraseña:</p>
     <form>
       <label>Contraseña</label>
-      <input type="password" id="password1" placeholder="Password" name="Contrasena" required/>
+      <input type="password" id="password1" placeholder="Password" name="Contrasena" required />
     </form>
     <p><button type="submit" id='ingresar'>Entrar</button></p>
   </section>
   <form>
-  <section id='pagina2' class=" hide">
-    <p>Encripta tus mensajes y las formulas de manera sencilla y segura.</p>
-    <p>Debes ingresar el texto a cifrar y la clave de cifrado, haces click en el botón Cifrar y obtienes tu texto cifrado. De manera similar para descifrar.</p>
-    <p>Ingrese el texto a Cifrar:</p>
-  <div class = "flex-container">
-    <p><button type="button" id = 'cifrar'>Cifrar</button></p>
-    <p><button type="button" id = 'descifrar'>Descifrar</button></p>
-  </div>
-    <p id="showMessage">Nro de desplazamiento</p>
-    <p><input id="desplazamiento" type="number" value = "1"></p>
-    <textarea name="text1" class="caja" id="entrada1" placeholder="Escriba texto a Cifrar"></textarea>    
-    <textarea name="text2" class="caja" id="resultado" placeholder="Escriba texto a Descifrar"></textarea>
-    <!-- <p><button type="reset" id = 'resetear'>Resetear</button></p> -->
-    <p><button type="volver">Volver a la pagina de Inicio</button></p>
-  </section>
-  <section id="pagina3" class="hide">
-    <p>Vuelve a intentarlo despues de 8 Horas</p>
-  </section>
-  <footer class="credito">
-    <p class="autora">© Hecho por Joanna Yucra 2019. </p>
-  </footer>
-</main>
+    <section id='pagina2' class=" hide">
+      <p>Encripta tus mensajes y las formulas de manera sencilla y segura.</p>
+      <p>Debes ingresar el texto a cifrar y la clave de cifrado, haces click en el botón Cifrar y obtienes tu texto
+        cifrado. De manera similar para descifrar.</p>
+      <p>Ingrese el texto a Cifrar:</p>
+      <div class="flex-container">
+        <p><button type="button" id='cifrar'>Cifrar</button></p>
+        <p><button type="button" id='decifrar'>Decifrar</button></p>
+      </div>
+      <p id="showMessage">Nro de desplazamiento</p>
+      <p><input id="desplazamiento" type="number" value="1"></p>
+      <textarea name="text1" class="caja" id="entrada1" placeholder="Escriba texto a Cifrar"></textarea>
+      <textarea name="text2" class="caja" id="resultado" placeholder="Escriba texto a Decifrar"></textarea>
+      <!-- <p><button type="reset" id = 'resetear'>Resetear</button></p> -->
+      <p><button type="volver">Volver a la pagina de Inicio</button></p>
+    </section>
+    <section id="pagina3" class="hide">
+      <p>Vuelve a intentarlo despues de 8 Horas</p>
+    </section>
+    <footer class="credito">
+      <p class="autora">© Hecho por Joanna Yucra 2019. </p>
+    </footer>
+    </main>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-  </body>
+</body>
+
 </html>

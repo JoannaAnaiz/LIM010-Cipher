@@ -6,8 +6,12 @@
 
 h1{
     color: #122934;
+    text-align: center;
 }
 
+p {
+    text-align: center;
+}
 body {
     background-color: rgb(151, 215, 240);
     font-family: 'Lato', sans-serif;
