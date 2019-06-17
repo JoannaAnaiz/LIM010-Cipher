@@ -14,7 +14,7 @@ let nroIntentos = 0;
 const confirmar = () => {
   if (password1.value === password2) {
     pagina1.classList.add('hide');
-    pagina2.classList.replace('hide', 'show');
+    pagina2.classList.replace('show');
     console.log('Lo Lograste')
   }
   else {
