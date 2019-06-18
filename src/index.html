@@ -6,21 +6,21 @@
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<header>
+  <h1>Bienvenido a LABQ</h1>
+</header>
+
 <body>
-  <header>
-    <main id='root'>
-      <h1>Bienvenido a LABQ</h1>
-  </header>
-  <section class="pantalla" id="pagina1">
-    <p>Ingrese Contraseña:</p>
-    <form>
-      <label>Contraseña</label>
-      <input type="password" id="password1" placeholder="Password" name="Contrasena" required />
-    </form>
-    <p><button type="submit" id="ingresar">Entrar</button></p>
-    
-  </section>
-  <form>
+  <main class="root">
+
+    <section class="container" id="pagina1">
+      <p>Ingrese Contraseña:</p>
+      <form>
+        <label>Contraseña</label>
+        <input type="password" id="password1" placeholder="Password" name="Contrasena" required />
+      </form>
+      <p><button type="submit" id="ingresar">Entrar</button></p>
+    </section>
     <section id="pagina2" class=" hide">
       <p>Encripta tus mensajes y las formulas de manera sencilla y segura.</p>
       <p>Debes ingresar el texto a cifrar y la clave de cifrado, haces click en el botón Cifrar y obtienes tu texto
@@ -42,9 +42,9 @@
     <footer class="credito">
       <p class="autora">© Hecho por Joanna Yucra 2019. </p>
     </footer>
-    </main>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+  </main>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
